@@ -18,6 +18,11 @@ export default {
   components: {
     HelloWorld,
     VtButton
+  },
+  mounted () {
+    console.log(this)
+    this.$store.dispatch('user/read')
   }
+
 }
 </script>
