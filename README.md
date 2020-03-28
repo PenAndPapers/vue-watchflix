@@ -25,5 +25,10 @@ yarn test:unit
 yarn lint
 ```
 
+### Compiles the application and storybook for production
+```
+yarn app:build
+```
+
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).

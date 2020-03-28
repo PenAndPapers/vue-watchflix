@@ -6,11 +6,13 @@
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "storybook": "start-storybook -p 9090 -c .storybook -s public",
-    "storybook:build": "build-storybook -c .storybook -o .out -s public",
+    "storybook:build": "build-storybook -c .storybook -o dist/storybook",
+    "app:build": "vue-cli-service build && build-storybook -c .storybook -o dist/storybook",
     "test:unit": "vue-cli-service test:unit",
     "lint": "vue-cli-service lint --fix"
   },
   "dependencies": {
+    "axios": "^0.19.2",
     "core-js": "^2.6.5",
     "register-service-worker": "^1.6.2",
     "vue": "^2.6.10",
@@ -19,9 +21,9 @@
   },
   "devDependencies": {
     "@babel/core": "^7.9.0",
+    "@fullhuman/postcss-purgecss": "^2.1.0",
     "@storybook/addon-actions": "^5.3.17",
     "@storybook/addon-console": "^1.2.1",
-    "@storybook/addon-docs": "^5.3.17",
     "@storybook/addon-knobs": "^5.3.17",
     "@storybook/addon-links": "^5.3.17",
     "@storybook/addon-storysource": "^5.3.17",
@@ -42,6 +44,8 @@
     "eslint": "^5.16.0",
     "eslint-plugin-vue": "^5.0.0",
     "lint-staged": "^8.1.5",
+    "storybook-vue-router": "^1.0.7",
+    "tailwindcss": "^1.2.0",
     "vue-loader": "^15.9.1",
     "vue-template-compiler": "^2.6.11"
   },
