@@ -3,13 +3,13 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
+    "app:build": "vue-cli-service build && build-storybook -c .storybook -o dist/storybook",
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "storybook": "start-storybook -p 9090 -c .storybook -s public",
     "storybook:build": "build-storybook -c .storybook -o dist/storybook",
-    "app:build": "vue-cli-service build && build-storybook -c .storybook -o dist/storybook",
-    "test:unit": "vue-cli-service test:unit",
-    "lint": "vue-cli-service lint --fix"
+    "lint": "vue-cli-service lint --fix",
+    "test:unit": "vue-cli-service test:unit"
   },
   "dependencies": {
     "axios": "^0.19.2",
