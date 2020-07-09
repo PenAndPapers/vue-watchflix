@@ -18,7 +18,7 @@ module.exports = {
     }
   },
   pwa: {
-    name: 'Vue App',
+    name: 'Watchflix',
     themeColor: '#35485e',
     manifestOptions: {
       background_color: '#40b882'
